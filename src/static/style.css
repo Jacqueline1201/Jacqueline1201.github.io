@@ -1,0 +1,219 @@
+
+body{
+    margin:0;
+    padding:0;
+    /*background: url(bookpic.jpg);*/
+    /*background-size: cover;
+    background-position:center;*/
+    font-family: "Handlee", sans-serif;
+    color:  rgb(71, 84, 128);
+}
+whitetext{
+    font-family: "Handlee", sans-serif;
+    color:  rgb(255, 255, 255);
+}
+#textboxid
+{
+    height:100px;
+    width:250px;
+    font-size:14pt;
+}
+
+/* Rectangle 16 */
+
+.confession_box{
+    position: absolute;
+    /*width: 463px;
+    height: 435px;*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow:#302d2d;
+    
+    }
+
+div.outer { position: relative; height: 24px; }
+div.outer img { position: absolute; right: 0; bottom: 0; }
+
+    
+.right-side {
+    /*top:50%;*/
+    margin:30px;
+    position:relative;
+    max-width: 300px;
+    /*left:80%; 
+    transform: translate(-50%,-50%);*/
+    padding: 30px;
+    
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow:#302d2d;
+}
+.right-side-container {
+    width: 30%;
+    height: 100%;
+    
+    float: right;
+    
+    text-align: center;
+  }
+  
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.left-side::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.left-side {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.left-side {
+    margin-right: 30%;
+    
+    height: 100%;
+    text-align: center;
+    overflow-y: auto;
+    
+}
+
+.confession-post {
+    margin:0 ;
+    margin-top: 30px;
+
+    background: #e9e3e3;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 20px;
+    position:relative;
+    left: 50%;
+    top: 0%;
+    border-radius:5px;
+    text-overflow: ellipsis; 
+    transform: translate(-50%,0);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    box-shadow:none;
+    border-radius:5px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/* Rectangle 17 */
+
+.title_box{
+position: absolute;
+width: 414px;
+height: 25px;
+left: 261px;
+top: 94px;
+
+background: #C4C4C4;
+border-radius: 5px;
+}
+
+.navbar-anteater {
+    
+    max-height: 50px;
+    max-width: 150px;
+    padding-left:10px;
+    overflow: hidden;
+}
+
+.mainheader {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    width:100%;
+    top:0;
+    background: url("https://s3-alpha-sig.figma.com/img/e1e0/bf34/a4b629668981106b3ad0d061b9aaf59d?Expires=1612742400&Signature=ME~SzpH0lZ~1KVIBMDBcqJis7w~uJL6WfcyMyYrVeq5NuvV~hlVmWBnY5fgLA3e4JbGR5gNDJfsk1Vy4m5Vb4KQTMVeTGpE0bIvk6RvB9ylxX4DiyLhec6r2kI1TVIvHG~YUzHrHyu-TJyN1yvEhVScfdDB92dOtuXWBIvArD3RM60wpKqc9W~oEhnBarM21Hiye9ZOvAzDy9hHuOOfifQqqgRexMdA9Xc6P87oAn9HCgdb18lTwra9mS8FLdFSbtJU-79~bhZSx2l8KWLzDEZTNUEPn7Qb58xug8x7mb5nP4HccohCk7shaPitEDNaRk3D2WZsVEmDoRPYK~Xy2tw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"), #C4C4C4;
+  }
+
+
+
+.one {
+    width: 20%;
+    height: 100%;
+    background: white;
+    float: right;
+    
+    text-align: center;
+  }
+  
+.two {
+    margin-right: 20%;
+    
+    height: 100%;
+    text-align: center;
+    overflow-y:auto
+}
+
+.background_gradient {
+    background: linear-gradient(227deg, #d55eb7, #56f7b8);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

@@ -1,0 +1,99 @@
+<html>
+
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href ="style.css" rel = "stylesheet" type ="text/css" />
+
+    </head>
+    
+    <body class="background_gradient">
+
+        
+      <!--</section>-->
+
+        <div class = "mainheader"  >
+          <h1>UCI Confessions</h1>
+          <p>Tell us your Deepest and Darkest Secrets</p>
+          
+        </div>
+        <div class = "navbar navbar-expand-lg navbar-light bg-light">
+            <a class = "navbar-brand" href="home">
+             
+            <img class = "navbar-anteater" src ="{{url_for('static', filename='anteater.png')}}" alt = "Anteater"> 
+            </a>
+            <button class = "navbar-toggler" type="button" data-toggle="collaps" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-labl="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class = "navbar-nav">
+                    <a class = "nav-item nav-link active" href="confess.html">Confess</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="right-side-container">
+          
+          <div class = "right-side">
+          
+            <h1>UCI Confessions</h1>
+            <h4>Thanks for your confession!</h4>
+            <h6> View the latest confessions here!</h6> 
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown</button>
+              <div class="dropdown-content">
+                <a href="home2">Oldest</a>
+                <a href="home">Newest</a>
+              </div>
+            </div>
+          
+        </div>
+
+
+      </div>
+        
+    
+        <div class="left-side">
+          {% for post in confessions %}
+          <div class = "confession-post">
+              <h2>{{post['title']}}</h2>
+              <p>{{post['confession']}}</p>
+              <!-- <div class="outer">
+                <img src="anteater.png">
+                </div> -->
+                
+          </div>
+          {%endfor%}
+
+          
+<!--  
+        <div class = "confession-post">
+          <body onload="getResult()">
+            <div class="container-fluid page">
+                <table class="table table-dark">
+                    <tbody id="result_table">
+                    </tbody>
+                </table>
+        
+            </div>
+          -->
+        
+            <!-- Place all script tags at the bottom of the body for best loading performance -->
+            <!-- Used to embed client side JavaScript -->
+            <script src="script.js"></script>
+            <!-- Link Ajax library (used to connect to the backend) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          </body>
+        </div>
+
+
+          
+     
+        </div>
+
+
+    </body>
+</html>
